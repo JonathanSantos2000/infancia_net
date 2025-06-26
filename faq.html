@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Infancia.NET</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="nav_logo">
+          <i class="fa-solid fa-child-reaching"></i>
+          <p>Infancia.NET</p>
+        </div>
+
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="index.html">Início</a>
+          </li>
+          <li class="nav-item sub-menu">
+            Sobre
+            <ul>
+              <li><a href="#menu">Projeto</a></li>
+              <li><a href="#menu">Conselho Tutelar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html">FAQ</a>
+          </li>
+          <li>
+            <button class="btn-default">Contatos</button>
+          </li>
+        </ul>
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <div id="overlay-menu"></div>
+    <main id="content">
+      <div class="accordion" id="faqAccordion">
+        <!-- Categoria 1: Sobre o Conselho Tutelar -->
+
+        <section id="Sobre_o_Conselho_Tutelar">
+          <h3>Sobre o Conselho Tutelar</h3>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse1"
+              >
+                O que é o Conselho Tutelar?
+              </button>
+            </h2>
+            <div
+              id="collapse1"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                É um órgão público autônomo, encarregado de zelar pelos direitos
+                da criança e do adolescente, conforme o ECA (Art. 131).
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2"
+              >
+                Quais são as funções do Conselho Tutelar?
+              </button>
+            </h2>
+            <div
+              id="collapse2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Atender crianças, adolescentes e suas famílias em casos de
+                violação de direitos, aplicando medidas de proteção.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3"
+              >
+                O Conselho Tutelar tira a guarda das crianças?
+              </button>
+            </h2>
+            <div
+              id="collapse3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Não. A retirada da guarda é decisão judicial, não cabe ao
+                Conselho.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse4"
+              >
+                Qual a diferença entre Conselho Tutelar e Conselho de Direitos?
+              </button>
+            </h2>
+            <div
+              id="collapse4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                O Conselho Tutelar atua na proteção individual, e o Conselho de
+                Direitos na formulação de políticas públicas.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse5"
+              >
+                Quem pode acionar o Conselho Tutelar?
+              </button>
+            </h2>
+            <div
+              id="collapse5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Qualquer cidadão pode acionar o Conselho ao perceber violação de
+                direitos.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse6"
+              >
+                O Conselho Tutelar tem poder de polícia?
+              </button>
+            </h2>
+            <div
+              id="collapse6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Não. Atua administrativamente na proteção de direitos, sem
+                funções policiais.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="Direitos_da_Crianca_e_do_Adolescente">
+          <h3>Direitos da Criança e do Adolescente</h3>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading7">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse7"
+              >
+                Quais são os direitos garantidos pelo ECA?
+              </button>
+            </h2>
+            <div
+              id="collapse7"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Vida, saúde, alimentação, educação, esporte, lazer,
+                profissionalização, cultura, dignidade, respeito, liberdade e
+                convivência familiar e comunitária.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading8">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse8"
+              >
+                O que configura trabalho infantil?
+              </button>
+            </h2>
+            <div
+              id="collapse8"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Trabalho antes dos 16 anos, salvo na condição de aprendiz a
+                partir dos 14 anos.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading9">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse9"
+              >
+                O que é considerado violência contra crianças?
+              </button>
+            </h2>
+            <div
+              id="collapse9"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Violência física, psicológica, negligência, abuso sexual,
+                exploração e trabalho infantil.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading10">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse10"
+              >
+                Crianças têm direito a atendimento psicológico gratuito?
+              </button>
+            </h2>
+            <div
+              id="collapse10"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sim, através do SUS, CRAS, CREAS e serviços socioassistenciais.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading11">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse11"
+              >
+                A quem recorrer quando a escola não garante matrícula?
+              </button>
+            </h2>
+            <div
+              id="collapse11"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Ao Conselho Tutelar, que pode acionar a escola e órgãos
+                responsáveis.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="Denuncias_e_Atendimento">
+          <h3>Denúncias e Atendimento</h3>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading12">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse12"
+              >
+                Como fazer uma denúncia ao Conselho Tutelar?
+              </button>
+            </h2>
+            <div
+              id="collapse12"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Presencialmente, por telefone, email ou Disque 100.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading13">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse13"
+              >
+                As denúncias são anônimas?
+              </button>
+            </h2>
+            <div
+              id="collapse13"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sim. A identidade de quem denuncia é mantida em sigilo.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading14">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse14"
+              >
+                Quais tipos de casos o Conselho Tutelar atende?
+              </button>
+            </h2>
+            <div
+              id="collapse14"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Violência, negligência, trabalho infantil, abandono escolar,
+                abuso e exploração.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading15">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse15"
+              >
+                O que acontece após uma denúncia?
+              </button>
+            </h2>
+            <div
+              id="collapse15"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                O Conselho investiga, realiza visitas, escuta e toma medidas de
+                proteção.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading16">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse16"
+              >
+                O Conselho funciona 24 horas?
+              </button>
+            </h2>
+            <div
+              id="collapse16"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Possui plantão 24h para emergências, além do horário
+                administrativo.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading17">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse17"
+              >
+                Em quais situações devo acionar a Polícia em vez do Conselho?
+              </button>
+            </h2>
+            <div
+              id="collapse17"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Em flagrantes de crime, como abuso sexual, violência física ou
+                sequestro.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="Funcionamento_e_Aspectos_Legais">
+          <h3>Funcionamento e Aspectos Legais</h3>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading18">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse18"
+              >
+                Quem pode ser Conselheiro Tutelar?
+              </button>
+            </h2>
+            <div
+              id="collapse18"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Maiores de 21 anos, ensino superior completo, idoneidade moral e
+                residência no município.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading19">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse19"
+              >
+                Como é feita a eleição dos Conselheiros?
+              </button>
+            </h2>
+            <div
+              id="collapse19"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Por voto direto da comunidade, organizado pelo CMDCA a cada 4
+                anos.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading20">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse20"
+              >
+                Quantos Conselheiros existem por município?
+              </button>
+            </h2>
+            <div
+              id="collapse20"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                No mínimo 5 por unidade de Conselho, podendo ser mais conforme a
+                população.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading21">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse21"
+              >
+                O Conselho Tutelar tem poder sobre escolas, hospitais ou
+                serviços sociais?
+              </button>
+            </h2>
+            <div
+              id="collapse21"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Não. Pode requisitar serviços, mas não exerce autoridade direta
+                sobre eles.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading22">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse22"
+              >
+                O que é uma medida protetiva aplicada pelo Conselho?
+              </button>
+            </h2>
+            <div
+              id="collapse22"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Encaminhamentos para serviços, acolhimento, orientação, inclusão
+                em programas, entre outros.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading23">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse23"
+              >
+                O Conselho pode aplicar multa aos pais?
+              </button>
+            </h2>
+            <div
+              id="collapse23"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Não diretamente. Encaminha casos ao Ministério Público que pode
+                propor sanções.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading24">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse24"
+              >
+                Quais são os limites de atuação do Conselho?
+              </button>
+            </h2>
+            <div
+              id="collapse24"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Não julga, não prende, atua na proteção e encaminhamento de
+                casos.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading25">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse25"
+              >
+                Se o Conselho não resolver, a quem recorrer?
+              </button>
+            </h2>
+            <div
+              id="collapse25"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Ministério Público, Defensoria Pública ou Vara da Infância e
+                Juventude.
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <img
+        class="footer-wave"
+        src="src/images/wave.svg"
+        alt="onda decorativa"
+      />
+
+      <div class="conteiner">
+        <div class="coll_left">
+          <h5 class="footer_title title_color">
+            Sobre o Infancia.<span>NET</span>
+          </h5>
+          <p class="grey-text text-lighten-4 text_geral_color">
+            Conhecimento que acolhe, orienta e transforma. <br />Um portal
+            completo para quem quer entender e defender a infância com
+            responsabilidade e empatia.
+          </p>
+          <div class="maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.833014057763!2d-48.91638182455413!3d-27.098560676536913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df4798e4c115eb%3A0xfac109236b3eba88!2sConselho%20Tutelar%20de%20Brusque!5e0!3m2!1spt-BR!2sbr!4v1750893176699!5m2!1spt-BR!2sbr"
+              width="600"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <p class="text_geral_color">
+            Praça da Cidadania - R. Pref. Germano Schaeffer, 110 - Centro 1,
+            Brusque - SC, 88350-170
+          </p>
+        </div>
+        <div class="coll_right">
+          <h5 class="footer_title title_color">Links Rápidos</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-3" href="#home">Início</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#menu">Cardápio</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-3" href="#testimonials">
+                Avaliações
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="conteiner_down">
+        <p>© 2025 Infancia.<span>NET</span></p>
+        <br />
+        <a href="#!">Política de Privacidade</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/javascript/script.js"></script>
+  </body>
+</html>
