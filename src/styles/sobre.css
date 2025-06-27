@@ -1,0 +1,25 @@
+#content #sobre .paragrafo1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.paragrafo1 .texto p,
+.paragrafo_2 .texto p {
+  font-size: 19px;
+  text-align: justify;
+}
+.paragrafo1 .img img {
+  width: 550px;
+  height: 400px;
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  #content #sobre .paragrafo1 {
+    flex-direction: column-reverse;
+  }
+  .paragrafo1 .img img {
+    width: 100%;
+    margin-left: 0;
+  }
+}

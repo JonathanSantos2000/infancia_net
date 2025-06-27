@@ -33,16 +33,17 @@ header {
   justify-content: space-around;
   list-style: none;
   gap: 48px;
+  color: var(--color-primary-6);
 }
 
 .nav-item a {
+  color: var(--color-primary-6);
   text-decoration: none;
-  color: #1d1d1dad;
   font-weight: 600;
 }
 
 .nav-item.active a {
-  color: var(--color-neutral-1);
+  color: var(--color-font-1);
   border-bottom: 3px solid var(--color-primary-4);
 }
 
@@ -74,7 +75,7 @@ header {
   font-weight: 600;
   cursor: pointer;
 }
-.sub-menu:hover ul{
+.sub-menu:hover ul {
   display: block;
 }
 
